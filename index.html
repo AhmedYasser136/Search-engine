@@ -1,8 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>صفحة البحث المخصصة</title>
     
     <style>
         /* 1. التنسيقات الأساسية للجسم والـ RTL */
@@ -13,9 +16,24 @@ body {
     padding: 40px 20px;
     background-color: #f0f2f5; /* خلفية ناعمة وباردة */
     display: flex;
-    justify-content: center; /* توسيط أفقي للمحتوى */
-    align-items: flex-start; /* بدء المحتوى من الأعلى */
+    flex-direction: column; /* جعل العناصر تتراص عمودياً */
+    justify-content: flex-start; /* بدء المحتوى من الأعلى */
+    align-items: center; /* توسيط أفقي للمحتوى */
     min-height: 100vh;
+}
+
+/* تنسيق الروابط الجديدة */
+.follow-link {
+    margin-bottom: 20px; /* لإضافة مسافة تحت الرابط */
+    font-size: 1.2em; /* تكبير الخط قليلاً */
+    color: #007bff; /* لون أزرق جذاب */
+    text-decoration: none; /* إزالة خط التسطير الافتراضي */
+    font-weight: bold; /* جعل الخط سميكاً */
+}
+
+.follow-link:hover {
+    text-decoration: underline; /* إضافة تسطير عند التمرير */
+    color: #0056b3; /* لون أغمق عند التمرير */
 }
 
 /* 2. تصميم منطقة البحث الأنيقة (.search-area) */
@@ -83,6 +101,7 @@ body {
     </head>
 <body>
 
+    <a href="https://unit.link/ahmedyasser" class="follow-link">follow us on</a>
 
     <div class="search-area">
         <script async src="https://cse.google.com/cse.js?cx=02f10ec49f84e45f8"></script>
